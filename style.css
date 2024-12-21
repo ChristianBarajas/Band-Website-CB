@@ -35,9 +35,13 @@ body {
     transition: color 0.3s ease; /* Smooth hover effect */
   }
   
-  .navbar a:hover {
-    color: rgb(239, 223, 182) /* Change color on hover (e.g., gold) */
-  }
+  
+    .navbar a:hover {
+      color: rgb(229, 33, 33); /* Change text color on hover (e.g., red) */
+      transform: scale(1.1); /* Slightly grow the text */
+      display: inline-block; /* Ensure the scaling works properly */
+    }
+  
 
   /* Logo Styling */
 .logo {
@@ -49,3 +53,18 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scaling and shadow */
 }
 
+/* Basic logo styling */
+.logo {
+  width: 700px; /* Initial size of the logo */
+  transition: transform 0.3s ease, transform 0.2s ease; /* Smooth animation */
+}
+
+/* Hover effect */
+.logo:hover {
+  transform: scale(1.1); /* Grow the logo to 110% of its size */
+}
+
+/* Adding slight delay for smooth shrink */
+.logo {
+  transition: transform 0.3s ease;
+}
